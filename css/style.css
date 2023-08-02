@@ -159,13 +159,13 @@ header {
   background-color: #640fc5;
   font-family: "Montserrat", sans-serif;
   color: #f4f4f4;
-  text-align: center;
   padding-top: 0;
 }
 header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid black;
 }
 header nav ul {
   display: flex;
@@ -177,6 +177,9 @@ header nav ul li a {
   color: inherit;
   text-decoration: none;
 }
+header .header-body {
+  display: flex;
+}
 header .header-body h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 50px;
@@ -184,4 +187,9 @@ header .header-body h1 {
   padding: 0.25rem 0.75rem;
   margin-top: 1rem;
   padding-bottom: 0;
+}
+header .header-body img {
+  width: 30%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */

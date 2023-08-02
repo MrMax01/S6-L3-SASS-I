@@ -8,12 +8,13 @@ header {
   background-color: $bg-hero;
   font-family: $ff;
   color: $text-color;
-  text-align: center;
+  //   text-align: center;
   padding-top: 0;
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid black;
     ul {
       display: flex;
       li {
@@ -26,9 +27,14 @@ header {
     }
   }
   .header-body {
+    display: flex;
     h1 {
       @include titleBig();
       padding-bottom: 0;
+    }
+    img {
+      width: 30%;
+      object-fit: cover;
     }
   }
 }

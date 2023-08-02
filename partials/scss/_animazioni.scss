@@ -1,0 +1,7 @@
+@mixin floating($br: 20px, $bs: rgba(0, 0, 0, 0.24) 0px 3px 8px, $b: 2px solid trasparent) {
+  border-radius: $br;
+  box-shadow: $bs;
+  border: $b;
+  scale: 1.1;
+  transition: 500ms;
+}

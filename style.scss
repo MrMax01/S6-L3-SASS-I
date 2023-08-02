@@ -3,6 +3,7 @@
 @import "./partials/scss/font";
 @import "./partials/scss/spaziature";
 @import "./partials/scss/bottoni";
+@import "./partials/scss/animazioni";
 
 header {
   background-color: $bg-hero;
@@ -28,13 +29,33 @@ header {
   }
   .header-body {
     display: flex;
-    h1 {
-      @include titleBig();
-      padding-bottom: 0;
+    div {
+      h1 {
+        @include titleBig();
+        padding-bottom: 0;
+      }
+      button {
+        &:hover {
+          @include floating();
+        }
+      }
     }
     img {
       width: 30%;
       object-fit: cover;
     }
+  }
+}
+section {
+  display: flex;
+  //   gap: 1rem;
+  justify-content: space-between;
+  div.card {
+    img {
+      height: 200px;
+      object-fit: cover;
+    }
+    width: 24%;
+    overflow: hidden;
   }
 }

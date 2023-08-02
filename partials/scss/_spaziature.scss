@@ -1,0 +1,23 @@
+$sizes: (
+  sm: 10px,
+  normal: 20px,
+  md: 30px,
+  lg: 40px,
+  xl: 50px,
+  xxl: 60px,
+);
+
+@each $key, $val in $sizes {
+  .pi-#{$key} {
+    padding-inline: $val;
+  }
+  .pb-#{$key} {
+    padding-block: $val;
+  }
+  .mi-#{$key} {
+    margin-inline: $val;
+  }
+  .mb-#{$key} {
+    margin-block: $val;
+  }
+}

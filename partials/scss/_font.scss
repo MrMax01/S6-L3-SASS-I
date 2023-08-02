@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap");
+
+$ff: "Montserrat", sans-serif;
+@for $i from 1 through 5 {
+  .fs-#{$i} {
+    font-size: $i * 10px;
+  }
+}
+
+@mixin titleBig() {
+  font-family: $ff;
+
+  font-size: 50px;
+  font-weight: bold;
+
+  padding: 0.25rem 0.75rem;
+  margin-top: 1rem;
+  //   margin-bottom: 2rem;
+}
